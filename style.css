@@ -801,3 +801,111 @@ body {
     border-radius: 20px;
     margin-bottom: 30px;
 }
+/* ===== Article/Probondho Page ===== */
+.article-page {
+    padding: 120px 20px 60px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.article-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* ফিরে যাওয়ার Link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.back-link:hover {
+    color: #1b5e20;
+}
+
+/* শিরোনাম */
+.article-title {
+    font-size: 2rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.article-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e8f5e9;
+}
+
+/* মূল লেখার অংশ */
+.article-body p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 2;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.article-body strong {
+    color: #1b5e20;
+}
+/* ===== Article/Probondho Page ===== */
+.article-page {
+    padding: 120px 20px 60px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.article-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* ফিরে যাওয়ার Link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.back-link:hover {
+    color: #1b5e20;
+}
+
+/* শিরোনাম */
+.article-title {
+    font-size: 2rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.article-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e8f5e9;
+}
+
+/* মূল লেখার অংশ */
+.article-body p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 2;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.article-body strong {
+    color: #1b5e20;
+}
