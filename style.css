@@ -558,16 +558,27 @@ body {
 
 /* এখন Placeholder Box, পরে আসল ছবি বসালে এই Style-ই কাজ করবে */
 .gallery-item {
-    aspect-ratio: 1 / 1;      /* সবসময় বর্গাকার (Square) রাখে */
-    background-color: #c8e6c9;
+    background-color: #ffffff;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: #4caf50;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #444;
+    background-color: #ffffff;
+}
 }
 
 .gallery-item:hover {
