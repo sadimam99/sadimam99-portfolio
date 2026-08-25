@@ -666,65 +666,6 @@ body {
     font-size: 0.95rem;
     line-height: 1.6;
 }/* ===== Gallery Section ===== */
-.gallery {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
-}
-
-.gallery-content {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.gallery h2 {
-    font-size: 2rem;
-    color: #1b5e20;
-    margin-bottom: 15px;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.gallery h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background-color: #4caf50;
-    border-radius: 2px;
-}
-
-.gallery-intro {
-    color: #555;
-    margin-bottom: 40px;
-    font-size: 1rem;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-}
-
-/* এখন Placeholder Box, পরে আসল ছবি বসালে এই Style-ই কাজ করবে */
-.gallery-item {
-    background-color: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    display: block;
-}
-
 .gallery-caption {
     padding: 10px 8px;
     text-align: center;
@@ -732,22 +673,10 @@ body {
     color: #444;
     background-color: #ffffff;
 }
-}
 
 .gallery-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
-}
-
-/* পরে যখন আসল ছবি বসাবেন, তখন এই Style ছবিকে সুন্দরভাবে Box-এর ভেতরে ফিট করবে */
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}/* ===== Contact Me Section ===== */
-.contact {
-    padding: 80px 20px;
-    background-color: #ffffff;
 }
 
 .contact-content {
