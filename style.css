@@ -373,7 +373,9 @@ body {
     line-height: 1.6;
 }
 /* ===== Student Achievements Section ===== */
-/* ===== Student Achievements Section ===== */
+/* =========================================
+   Student Achievements Section
+   ========================================= */
 
 .achievements {
     padding: 60px 20px;
@@ -386,7 +388,7 @@ body {
     text-align: center;
 }
 
-/* ===== Section Heading ===== */
+/* ===== Heading ===== */
 
 .achievements h2 {
     font-size: 2rem;
@@ -395,13 +397,13 @@ body {
     font-weight: 700;
 }
 
-/* ===== Heading Underline ===== */
+/* ===== Heading-এর নিচের সবুজ দাগ ===== */
 
-.section-line {
+.achievements-line {
     width: 50px;
     height: 3px;
     background-color: #4caf50;
-    margin: 0 auto 28px;
+    margin: 0 auto 30px;
     border-radius: 5px;
 }
 
@@ -414,31 +416,33 @@ body {
     width: 100%;
 }
 
-/* ===== সাধারণ Card ===== */
+/* ===== Card ===== */
 
 .stat-card {
     height: 150px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    border-radius: 14px;
     padding: 15px;
     box-sizing: border-box;
+
+    border-radius: 14px;
 
     transition: transform 0.3s ease,
                 box-shadow 0.3s ease;
 }
 
-/* ===== Hover Effect ===== */
+/* ===== Hover ===== */
 
 .stat-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 
-/* ===== 1st, 3rd, 5th Card - হালকা সবুজ ===== */
+/* ===== ১ম, ৩য়, ৫ম Card — হালকা সবুজ ===== */
 
 .stat-card:nth-child(odd) {
     background-color: #e8f5e9;
@@ -448,11 +452,7 @@ body {
     color: #1b5e20;
 }
 
-.stat-card:nth-child(odd) .stat-label {
-    color: #333333;
-}
-
-/* ===== 2nd, 4th Card - হালকা গোলাপী ===== */
+/* ===== ২য়, ৪র্থ Card — হালকা গোলাপী ===== */
 
 .stat-card:nth-child(even) {
     background-color: #fce4ec;
@@ -460,10 +460,6 @@ body {
 
 .stat-card:nth-child(even) .stat-number {
     color: #c2185b;
-}
-
-.stat-card:nth-child(even) .stat-label {
-    color: #333333;
 }
 
 /* ===== Number ===== */
@@ -480,6 +476,7 @@ body {
 
 .stat-label {
     font-size: 1rem;
+    color: #333333;
     line-height: 1.4;
     white-space: nowrap;
 }
@@ -495,11 +492,7 @@ body {
 }
 
 
-/* ==========================================
-   Responsive Design
-   ========================================== */
-
-/* Tablet */
+/* ===== Tablet ===== */
 
 @media (max-width: 900px) {
 
@@ -510,7 +503,48 @@ body {
 }
 
 
-/* Mobile */
+/* ===== Mobile ===== */
+
+@media (max-width: 600px) {
+
+    .achievements {
+        padding: 45px 15px;
+    }
+
+    .achievements h2 {
+        font-size: 1.7rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-card {
+        height: 140px;
+    }
+
+    .stat-number {
+        font-size: 1.7rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        white-space: normal;
+    }
+
+}
+
+
+/* ===== ছোট Mobile ===== */
+
+@media (max-width: 400px) {
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 @media (max-width: 600px) {
 
