@@ -374,90 +374,182 @@ body {
     font-size: 0.9rem;
     line-height: 1.6;
 /* ===== Student Achievements Section ===== */
+
 .achievements {
     padding: 60px 20px;
     background-color: #ffffff;
 }
 
 .achievements-content {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
+/* ===== Section Heading ===== */
+
 .achievements h2 {
     font-size: 2rem;
     color: #1b5e20;
-    margin-bottom: 15px;
+    margin: 0 0 10px;
+    font-weight: 700;
 }
 
-.achievements-intro {
-    color: #555;
-    margin-bottom: 40px;
-    font-size: 1rem;
+/* ===== Heading Underline ===== */
+
+.section-line {
+    width: 50px;
+    height: 3px;
+    background-color: #4caf50;
+    margin: 0 auto 28px;
+    border-radius: 5px;
 }
+
+/* ===== Achievement Cards ===== */
 
 .achievements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+    width: 100%;
 }
 
 /* ===== সাধারণ Card ===== */
+
 .stat-card {
     height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
+
+    border-radius: 14px;
     padding: 15px;
     box-sizing: border-box;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
+
+/* ===== Hover Effect ===== */
 
 .stat-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 
-/* ===== বিজোড় Card - Green ===== */
+/* ===== 1st, 3rd, 5th Card - হালকা সবুজ ===== */
+
 .stat-card:nth-child(odd) {
-    background-color: #4caf50;
+    background-color: #e8f5e9;
 }
 
-.stat-card:nth-child(odd) .stat-number,
+.stat-card:nth-child(odd) .stat-number {
+    color: #1b5e20;
+}
+
 .stat-card:nth-child(odd) .stat-label {
-    color: #ffffff;
+    color: #333333;
 }
 
-/* ===== জোড় Card - হালকা গোলাপী ===== */
+/* ===== 2nd, 4th Card - হালকা গোলাপী ===== */
+
 .stat-card:nth-child(even) {
     background-color: #fce4ec;
 }
 
-.stat-card:nth-child(even) .stat-number,
+.stat-card:nth-child(even) .stat-number {
+    color: #c2185b;
+}
+
 .stat-card:nth-child(even) .stat-label {
-    color: #880e4f;
+    color: #333333;
 }
 
 /* ===== Number ===== */
+
 .stat-number {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 8px;
     white-space: nowrap;
 }
 
-/* ===== Label - এক সারিতে ===== */
+/* ===== Label ===== */
+
 .stat-label {
-    font-size: 0.8rem;
-    margin-top: 5px;
+    font-size: 1rem;
+    line-height: 1.4;
     white-space: nowrap;
 }
-}/* ===== Publications Section ===== */
-.publications {
-    padding: 80px 20px;
-    background-color: #ffffff;
+
+/* ===== দ্বিতীয় লাইন ===== */
+
+.achievements-intro {
+    margin: 28px 0 0;
+    text-align: center;
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .achievements-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .achievements {
+        padding: 45px 15px;
+    }
+
+    .achievements h2 {
+        font-size: 1.7rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-card {
+        height: 140px;
+    }
+
+    .stat-number {
+        font-size: 1.7rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* ছোট Mobile */
+
+@media (max-width: 400px) {
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .publications-content {
