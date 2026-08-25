@@ -171,6 +171,7 @@ body {
     background-color: #4caf50;
     border-radius: 2px;
 }
+
 /* প্রতিটা Education Card */
 .education-item {
     display: flex;
@@ -184,6 +185,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     border-left: 5px solid #4caf50;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 /* Card-এ Mouse নিয়ে গেলে হালকা উপরে উঠবে */
 .education-item:hover {
@@ -371,219 +373,64 @@ body {
     color: #666;
     font-size: 0.9rem;
     line-height: 1.6;
-}
-/* ===== Student Achievements Section ===== */
-/* =========================================
-   Student Achievements Section
-   ========================================= */
-
+}/* ===== Student Achievements Section ===== */
 .achievements {
-    padding: 60px 20px;
-    background-color: #ffffff;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1b5e20 0%, #4caf50 100%);
 }
 
 .achievements-content {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
 
-/* ===== Heading ===== */
-
 .achievements h2 {
     font-size: 2rem;
-    color: #1b5e20;
-    margin: 0 0 10px;
-    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
-/* ===== Heading-এর নিচের সবুজ দাগ ===== */
-
-.achievements-line {
-    width: 50px;
-    height: 3px;
-    background-color: #4caf50;
-    margin: 0 auto 30px;
-    border-radius: 5px;
+.achievements-intro {
+    color: #e8f5e9;
+    margin-bottom: 40px;
+    font-size: 1rem;
 }
-
-/* ===== Achievement Cards ===== */
 
 .achievements-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 22px;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
 }
-
-/* ===== Card ===== */
 
 .stat-card {
-    height: 150px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 15px;
-    box-sizing: border-box;
-
-    border-radius: 14px;
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 35px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
 }
-
-/* ===== Hover ===== */
 
 .stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+    transform: translateY(-8px);
+    background-color: rgba(255, 255, 255, 0.25);
 }
-
-/* ===== ১ম, ৩য়, ৫ম Card — হালকা সবুজ ===== */
-
-.stat-card:nth-child(odd) {
-    background-color: #e8f5e9;
-}
-
-.stat-card:nth-child(odd) .stat-number {
-    color: #1b5e20;
-}
-
-/* ===== ২য়, ৪র্থ Card — হালকা গোলাপী ===== */
-
-.stat-card:nth-child(even) {
-    background-color: #fce4ec;
-}
-
-.stat-card:nth-child(even) .stat-number {
-    color: #c2185b;
-}
-
-/* ===== Number ===== */
 
 .stat-number {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 8px;
-    white-space: nowrap;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
-
-/* ===== Label ===== */
 
 .stat-label {
-    font-size: 1rem;
-    color: #333333;
-    line-height: 1.4;
-    white-space: nowrap;
-}
-
-/* ===== দ্বিতীয় লাইন ===== */
-
-.achievements-intro {
-    margin: 28px 0 0;
-    text-align: center;
-    color: #555555;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-/* ===== Tablet ===== */
-
-@media (max-width: 900px) {
-
-    .achievements-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
-
-/* ===== Mobile ===== */
-
-@media (max-width: 600px) {
-
-    .achievements {
-        padding: 45px 15px;
-    }
-
-    .achievements h2 {
-        font-size: 1.7rem;
-    }
-
-    .achievements-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .stat-card {
-        height: 140px;
-    }
-
-    .stat-number {
-        font-size: 1.7rem;
-    }
-
-    .stat-label {
-        font-size: 0.9rem;
-        white-space: normal;
-    }
-
-}
-
-
-/* ===== ছোট Mobile ===== */
-
-@media (max-width: 400px) {
-
-    .achievements-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .achievements {
-        padding: 45px 15px;
-    }
-
-    .achievements h2 {
-        font-size: 1.7rem;
-    }
-
-    .achievements-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .stat-card {
-        height: 140px;
-    }
-
-    .stat-number {
-        font-size: 1.7rem;
-    }
-
-    .stat-label {
-        font-size: 0.9rem;
-    }
-
-}
-
-
-/* ছোট Mobile */
-
-@media (max-width: 400px) {
-
-    .achievements-grid {
-        grid-template-columns: 1fr;
-    }
-
+    color: #e8f5e9;
+    font-size: 0.95rem;
+}/* ===== Publications Section ===== */
+.publications {
+    padding: 80px 20px;
+    background-color: #ffffff;
 }
 
 .publications-content {
@@ -665,8 +512,7 @@ body {
     color: #555;
     font-size: 0.95rem;
     line-height: 1.6;
-/* ===== Gallery Section ===== */
-
+}/* ===== Gallery Section ===== */
 .gallery {
     padding: 80px 20px;
     background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
@@ -704,82 +550,42 @@ body {
     font-size: 1rem;
 }
 
-
-/* ===== Gallery Grid ===== */
-
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
 }
 
-
-/* ===== Gallery Item ===== */
-
+/* এখন Placeholder Box, পরে আসল ছবি বসালে এই Style-ই কাজ করবে */
 .gallery-item {
-    height: 220px;
+    aspect-ratio: 1 / 1;      /* সবসময় বর্গাকার (Square) রাখে */
+    background-color: #c8e6c9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #4caf50;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ===== Gallery Image ===== */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
 
-.gallery-item img {
+/* পরে যখন আসল ছবি বসাবেন, তখন এই Style ছবিকে সুন্দরভাবে Box-এর ভেতরে ফিট করবে */
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-/* ===== Caption ===== */
-
-.gallery-caption {
-    padding: 10px 8px;
-    text-align: center;
-    font-size: 0.85rem;
-    color: #444;
+}/* ===== Contact Me Section ===== */
+.contact {
+    padding: 80px 20px;
     background-color: #ffffff;
 }
 
-
-/* ===== Hover ===== */
-
-.gallery-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.25);
-}
-
-
-/* ===== Tablet ===== */
-
-@media (max-width: 800px) {
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery-item {
-        height: 200px;
-    }
-
-}
-
-
-/* ===== Mobile ===== */
-
-@media (max-width: 500px) {
-
-    .gallery {
-        padding: 60px 15px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-item {
-        height: 230px;
-    }
-
-}
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
