@@ -943,4 +943,77 @@ body {
 
 .article-body strong {
     color: #1b5e20;
+}/* ===== গুরুত্বপূর্ণ লিংক Section ===== */
+.weblinks {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+}
+
+.weblinks-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.weblinks h2 {
+    font-size: 2rem;
+    color: #1b5e20;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.weblinks h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #4caf50;
+    border-radius: 2px;
+}
+
+.weblinks-intro {
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.weblinks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.link-card {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.25);
+}
+
+.link-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.link-card h3 {
+    color: #1b5e20;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.link-card p {
+    color: #666;
+    font-size: 0.85rem;
 }
